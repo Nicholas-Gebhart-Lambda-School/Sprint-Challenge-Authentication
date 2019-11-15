@@ -40,11 +40,18 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] What is the purpose of using _sessions_?
 
+  - A session can be used to validate some paramter based on a returning user
+
 - [ ] What does bcrypt do to help us store passwords in a secure manner.
+
+  - Hashing and salting
 
 - [ ] What does bcrypt do to slow down attackers?
 
+  - Hashing and salting, but it also hashes multiple pseudo-random iterations
+
 - [ ] What are the three parts of the JSON Web Token?
+  - A header, signature, payload
 
 ## Minimum Viable Product
 
