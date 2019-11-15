@@ -20,8 +20,19 @@ const add = async user => {
   return findById(id);
 };
 
+const remove = async id => {
+  const removed = await findById(id);
+
+  await db("users")
+    .where({ id })
+    .del();
+
+  return removed;
+};
+
 module.exports = {
   find,
   findBy,
-  add
+  add,
+  remove
 };
